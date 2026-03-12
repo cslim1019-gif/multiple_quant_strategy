@@ -1,0 +1,7 @@
+streamlit
+FinanceDataReader
+pandas
+numpy
+plotly
+quantstats
+scipy

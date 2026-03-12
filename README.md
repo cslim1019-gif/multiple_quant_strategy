@@ -96,8 +96,8 @@ $$Maximize \quad S_p = \frac{E[R_p - R_f]}{\sigma_p}$$
 
 ### subject to
 
-($$\sum w_i = 1$$)
+$$\sum w_i = 1$$
 
-($$0 \le w_i \le 1$$)
+$$0 \le w_i \le 1$$
 
 SciPy의 **SLSQP optimizer**를 사용하여 위 제약 조건을 만족하는 최적 비중을 계산합니다.

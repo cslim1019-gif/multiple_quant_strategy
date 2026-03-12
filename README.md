@@ -95,7 +95,7 @@ streamlit run app.py
 maximize:
 
 S_p = E[R_p - R_f] / σ_p
-
+(E[R_p-R_f])/σ_p 
 subject to
 
 Σ w_i = 1

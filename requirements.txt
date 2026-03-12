@@ -1,7 +1,8 @@
 streamlit
-FinanceDataReader
+finance-datareader
 pandas
 numpy
 plotly
 quantstats
 scipy
+

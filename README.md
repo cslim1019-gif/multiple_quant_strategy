@@ -95,6 +95,7 @@ streamlit run app.py
 $$Maximize \quad S_p = \frac{E[R_p - R_f]}{\sigma_p}$$
 
 ### subject to
+
 ($$\sum w_i = 1$$)
 
 ($$0 \le w_i \le 1$$)

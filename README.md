@@ -90,20 +90,16 @@ streamlit run app.py
 
 선택한 전략들의 비중을 조정하여 **Sharpe Ratio가 최대가 되는 포트폴리오**를 찾습니다.
 
-Optimization Problem
+## Optimization Problem
 
-[
-\max S_p = \frac{E[R_p - R_f]}{\sigma_p}
-]
+maximize:
+
+S_p = E[R_p - R_f] / σ_p
 
 subject to
 
-[
-\sum w_i = 1
-]
+Σ w_i = 1
+0 ≤ w_i ≤ 1
 
-[
-0 \le w_i \le 1
-]
 
 SciPy의 **SLSQP optimizer**를 사용하여 위 제약 조건을 만족하는 최적 비중을 계산합니다.

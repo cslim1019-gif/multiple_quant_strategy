@@ -92,14 +92,8 @@ streamlit run app.py
 
 ## Optimization Problem
 
-maximize:
+본 대시보드는 샤프 지수($$Sharpe\ Ratio$$)를 극대화하는 비중($$w$$)을 찾기 위해 다음과 같은 최적화 문제를 해결합니다.$$Maximize \quad S_p = \frac{E[R_p - R_f]}{\sigma_p}$$이때, 모든 비중의 합은 1이며($$\sum w_i = 1$$), 각 비중은 0과 1 사이($$0 \le w_i \le 1$$)라는 제약 조건을 준수합니다.
 
-S_p = E[R_p - R_f] / σ_p
-(E[R_p-R_f])/σ_p 
-subject to
-
-Σ w_i = 1
-0 ≤ w_i ≤ 1
 
 
 SciPy의 **SLSQP optimizer**를 사용하여 위 제약 조건을 만족하는 최적 비중을 계산합니다.
